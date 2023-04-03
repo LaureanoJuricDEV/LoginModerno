@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<main class="container">
+ 
+<div class="containerLogin" id="containerLogin">
+    <div class="containerTittle">
+        <h2 id="loginTittle">Iniciar Sesion</h2>
+        <h2 id="registerTittle">Registrarse</h2>
+    </div>
+    
+      <form class="formLogin" id="formLogin">
+        <input type="text" placeholder="Usuario" class="userLogin" id="userLogin" >
+         <input type="password" placeholder="Clave" class="passLogin"id="passLogin" >
+         <span id="seePass" class="seePass">
+            <i class="fa-regular fa-eye" id="eyeOpen"></i>
+            <i class="fa-solid fa-eye-slash" id="eyeClosed"></i>
+        </span>
+        <div class="loginFail" id="loginFail"><p></p></div>
+        <input type="submit" value="¡Vamos!" class="buttonLogin" id="buttonLogin" >
+     </form>
+     
+     
+</div>
+
+<div class="containerRegister" id="containerRegister">
+    <div class="containerTittle">
+        <h2 id="loginTittle2" class="loginTittle2">Iniciar Sesion</h2>
+        <h2 id="registerTittle2" class="registerTittle2">Registrarse</h2>
+    </div>
+    <form class="formRegister" id="formRegister">
+
+      <input type="text" placeholder="Usuario" class="userRegister" id="userRegister">
+      <input type="password" placeholder="Clave" class="passRegister" id="passRegister">
+      <input type="password" placeholder="Confirmar Clave" class="passConfirmed" id="passConfirmed">
+      <div id="registerFail" class="registerFail"></div>
+      <input type="submit" value="¡Registrarme!" placeholder="Registrarme" class="buttonRegister" id="buttonRegister">
+
+    </form>
+
+</div>
+<h1 class="tittleBienvenida" id="tittleBienvenida">Bienvenido <span id="nameUser"></span></h1>
+</main> 
+
+<div class="rain">
+ <img src="rain.png" alt="">
+</div>
+  
+
+<!--SCRIPTS-->
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/e7dc4602ee.js" crossorigin="anonymous"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); </style>
+  
+
+</body>
+</html>
